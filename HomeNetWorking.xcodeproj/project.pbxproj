@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7637E9283280C4000A8E6F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE7637E8283280C4000A8E6F /* Alamofire */; };
+		CEA9892E280FF74200673502 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9892D280FF74200673502 /* PostViewModel.swift */; };
 		CEEE44D127BA8F1600CFEED1 /* HomeNetWorkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE44D027BA8F1600CFEED1 /* HomeNetWorkingApp.swift */; };
 		CEEE44D327BA8F1600CFEED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE44D227BA8F1600CFEED1 /* ContentView.swift */; };
 		CEEE44D527BA8F1700CFEED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE44D427BA8F1700CFEED1 /* Assets.xcassets */; };
 		CEEE44D827BA8F1700CFEED1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE44D727BA8F1700CFEED1 /* Preview Assets.xcassets */; };
+		CEEE44E227BA8FED00CFEED1 /* AFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE44E127BA8FED00CFEED1 /* AFHttp.swift */; };
+		CEEE44E927BA912D00CFEED1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE44E827BA912D00CFEED1 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA9892D280FF74200673502 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		CEEE44CD27BA8F1600CFEED1 /* HomeNetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeNetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEE44D027BA8F1600CFEED1 /* HomeNetWorkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetWorkingApp.swift; sourceTree = "<group>"; };
 		CEEE44D227BA8F1600CFEED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEEE44D427BA8F1700CFEED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEE44D727BA8F1700CFEED1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEE44E127BA8FED00CFEED1 /* AFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHttp.swift; sourceTree = "<group>"; };
+		CEEE44E827BA912D00CFEED1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CEEE44EA27BA948F00CFEED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7637E9283280C4000A8E6F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				CEEE44D027BA8F1600CFEED1 /* HomeNetWorkingApp.swift */,
-				CEEE44D227BA8F1600CFEED1 /* ContentView.swift */,
-				CEEE44D427BA8F1700CFEED1 /* Assets.xcassets */,
+				CEEE44EA27BA948F00CFEED1 /* Info.plist */,
+				CEEE44DE27BA8F3B00CFEED1 /* Screens */,
+				CEEE44E027BA8FD400CFEED1 /* NetWork */,
+				CEEE44E727BA911A00CFEED1 /* Models */,
+				CEEE44DF27BA8F6200CFEED1 /* AppUtils */,
 				CEEE44D627BA8F1700CFEED1 /* Preview Content */,
 			);
 			path = HomeNetWorking;
@@ -65,6 +77,39 @@
 				CEEE44D727BA8F1700CFEED1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEEE44DE27BA8F3B00CFEED1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE44D227BA8F1600CFEED1 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CEEE44DF27BA8F6200CFEED1 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE44D427BA8F1700CFEED1 /* Assets.xcassets */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		CEEE44E027BA8FD400CFEED1 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE44E127BA8FED00CFEED1 /* AFHttp.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		CEEE44E727BA911A00CFEED1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE44E827BA912D00CFEED1 /* Post.swift */,
+				CEA9892D280FF74200673502 /* PostViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = HomeNetWorking;
+			packageProductDependencies = (
+				CE7637E8283280C4000A8E6F /* Alamofire */,
+			);
 			productName = HomeNetWorking;
 			productReference = CEEE44CD27BA8F1600CFEED1 /* HomeNetWorking.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,10 @@
 				Base,
 			);
 			mainGroup = CEEE44C427BA8F1600CFEED1;
+			packageReferences = (
+				CEEE44E327BA905300CFEED1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE7637E7283280C4000A8E6F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CEEE44CE27BA8F1600CFEED1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9892E280FF74200673502 /* PostViewModel.swift in Sources */,
+				CEEE44E227BA8FED00CFEED1 /* AFHttp.swift in Sources */,
 				CEEE44D327BA8F1600CFEED1 /* ContentView.swift in Sources */,
 				CEEE44D127BA8F1600CFEED1 /* HomeNetWorkingApp.swift in Sources */,
+				CEEE44E927BA912D00CFEED1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +327,13 @@
 				DEVELOPMENT_TEAM = LZ5UZD89X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = HomeNetWorking/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +360,13 @@
 				DEVELOPMENT_TEAM = LZ5UZD89X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = HomeNetWorking/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +404,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE7637E7283280C4000A8E6F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CEEE44E327BA905300CFEED1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE7637E8283280C4000A8E6F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEE44E327BA905300CFEED1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEEE44C527BA8F1600CFEED1 /* Project object */;
 }
