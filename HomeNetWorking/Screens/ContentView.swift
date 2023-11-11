@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  HomeNetWorking
-//
-//  Created by user on 14/02/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
